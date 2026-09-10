@@ -1,0 +1,1 @@
+{"name":"ha-house-mode-card","version":"0.2.0","description":"Home Assistant Lovelace custom card","license":"MIT","scripts":{"check":"node --check ha-house-mode-card.js"}}

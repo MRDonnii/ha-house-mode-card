@@ -1,4 +1,4 @@
-const VERSION = "0.2.0";
+const VERSION = "0.2.1";
 
 const DEFAULT_ICONS = {
   Normal: "mdi:home",
@@ -89,7 +89,7 @@ class HAHouseModeCard extends HTMLElement {
     const overrides = this._config.overrides || [];
 
     this.shadowRoot.innerHTML = `<style>
-      :host{display:block;--accent:var(--dashboard-accent,#62b5ff);--good:var(--dashboard-success,#54d9aa);--warn:var(--dashboard-warning,#ffbd59);--edge:var(--dashboard-border-neutral,rgba(127,145,165,.2))}
+      :host{display:block;--accent:var(--dashboard-accent, var(--primary-color, #62b5ff));--good:var(--dashboard-success, var(--success-color, #54d9aa));--warn:var(--dashboard-warning, var(--warning-color, #ffbd59));--edge:var(--dashboard-border-neutral, var(--divider-color, rgba(127,145,165,.2)))}
       *{box-sizing:border-box}
       ha-card{padding:18px;border-radius:20px;background:var(--ha-card-background,var(--card-background-color));color:var(--primary-text-color);box-shadow:var(--ha-card-box-shadow)}
       .head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
